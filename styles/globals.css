@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    
 }
 
 a {
@@ -13,4 +14,42 @@ a {
 
 * {
   box-sizing: border-box;
+  align-items: center;
+  background-color: azure;
+}
+.game{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-board{
+  text-align: center;
+
+}
+.game-tile{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+  grid-gap: 8px;
+}
+.square{
+  background-color: darkgrey;
+  border-radius: 8px;
+  box-shadow: 4px 4px #ddd;
+  width:100px;
+  height: 100px;
+  line-height: 90px;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.win{
+  font-size: 54px;
+  font-weight: bold;
+}
+.main{
+  display: flex;
+  justify-content: center;
 }
